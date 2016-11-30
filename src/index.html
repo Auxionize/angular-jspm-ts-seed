@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Auxionize</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="src/assets/favicon.png" />
+
+    <!-- build:css(.tmp) index.css -->
+    <link rel="stylesheet" href="src/assets/styles.css"></link>
+    <!-- endbuild -->
+</head>
+
+
+<body layout="column" ng-cloak>
+    <app flex layout="column"></app>
+
+    <!-- build:js(.tmp) index.js -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="jspm.browser.js"></script>
+    <script src="jspm.config.js"></script>
+
+    <script>
+      System.import('src/boot');
+    </script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
